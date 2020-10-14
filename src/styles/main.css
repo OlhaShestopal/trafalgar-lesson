@@ -135,7 +135,7 @@ content-section
   content: "";
   width: 131px;
   height: 115px;
-  background: url("../img/element\ \(1\).svg") center center no-repeat;
+  background: url("../img/element-1.svg") center center no-repeat;
   display: block;
 
   position: absolute;
@@ -147,7 +147,7 @@ content-section
   content: "";
   width: 131px;
   height: 115px;
-  background: url("../img/element\ \(1\).svg") center center no-repeat;
+  background: url("../img/element-1.svg") center center no-repeat;
   display: block;
   position: absolute;
   bottom: 0;
