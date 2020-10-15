@@ -1,0 +1,32 @@
+.article__dots-image::before {
+  top: -50px;
+  left: -50px;
+}
+.articles__card-container {
+  padding: 0px 52px 35px 33px;
+}
+.services__dots-image::after {
+  top: 85%;
+  z-index: -10;
+}
+
+.fon-img::after {
+  content: "";
+  display: block;
+  width: 938px;
+  height: 671px;
+  background: url(../img/Frame.png) left center no-repeat;
+  position: absolute;
+  top: 170px;
+  left: 0;
+  z-index: -10;
+}
+.content__dots-image::after {
+  right: 30px;
+  top: -200px;
+}
+
+.footer__image-right::after {
+  top: -70px;
+  right: 0;
+}

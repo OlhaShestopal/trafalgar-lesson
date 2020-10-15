@@ -1,0 +1,65 @@
+.articles {
+  margin-top: 216px;
+  position: relative;
+}
+
+.dots-fon--right::after {
+  content: "";
+  display: block;
+  width: 778px;
+  height: 557px;
+
+  background: url(../img/article-dots-right.svg) right center no-repeat;
+
+  position: absolute;
+  right: 0px;
+  top: 70px;
+  z-index: -10;
+}
+.articles__list {
+  margin-top: 77px;
+  position: relative;
+}
+.article__card {
+  padding: 0;
+}
+
+.articles__card-container {
+  padding: 0px 52px 35px 33px;
+}
+
+.articles__card-title {
+  width: 100%;
+  font-size: 21px;
+  line-height: 1.52;
+  margin-bottom: 12px;
+}
+
+.article__card-btn {
+  margin-top: 25px;
+  padding: 0;
+  min-width: 0;
+
+  color: #4089ed;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.64;
+
+  position: relative;
+}
+
+.article__card-btn::after {
+  background: url(../img/Vector.svg);
+
+  width: 15px;
+  height: 9px;
+
+  position: absolute;
+  right: -25px;
+  top: 10px;
+}
+
+.button--articles {
+  display: block;
+  margin: 77px auto 0;
+}
