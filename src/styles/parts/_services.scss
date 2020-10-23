@@ -1,11 +1,11 @@
-services {
+$gap-x: 17px;
+.services {
   margin-top: 192px;
-  position: relative;
+  @include medium {
+    margin-top: 60px;
+  }
 }
 
-.services__item {
-  position: relative;
-}
 .services__top {
   max-width: 950px;
   margin: 0 auto;
@@ -23,10 +23,19 @@ services {
 }
 
 .services__list {
-  margin-top: 83px;
-  gap: 37px 17px;
+  gap: 37px $gap-x;
 }
 
+.services__item {
+  @include large {
+    width: calc(50% - #{$gap-x});
+    display: flex;
+    justify-content: center;
+  }
+  @include smoll {
+    width: 100%;
+  }
+}
 .services__button {
   margin-top: 69px;
   text-align: center;

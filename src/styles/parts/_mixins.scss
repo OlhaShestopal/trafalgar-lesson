@@ -1,0 +1,40 @@
+$extra-smoll-size: 434px;
+$smoll-size: 641px;
+$medium-size: 768px;
+$extra-medium-size: 901px;
+$large-size: 1114px;
+@mixin extra-smoll {
+  @media screen and (max-width: $extra-smoll-size) {
+    @content;
+  }
+}
+@mixin smoll {
+  @media screen and (max-width: $smoll-size) {
+    @content;
+  }
+}
+@mixin medium {
+  @media screen and(max-width: $medium-size) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (max-width: $large-size) {
+    @content;
+  }
+}
+
+@mixin extra-medium {
+  @media screen and (max-width: $extra-medium-size) {
+    @content;
+  }
+}
+@mixin visualle-hidden {
+  appearance: none;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}

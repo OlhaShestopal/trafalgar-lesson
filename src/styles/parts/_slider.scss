@@ -1,5 +1,8 @@
 .slider {
   margin-top: 251px;
+  @include medium {
+    margin-top: 60px;
+  }
 }
 
 .slider__nav {
@@ -63,6 +66,9 @@
   border-radius: 24px;
 
   position: relative;
+  @include extra-medium {
+    height: auto;
+  }
 }
 
 .slider__dots-left::before {
@@ -73,7 +79,7 @@
 
 .slider__dots-right::after {
   background: url(../img/Group.svg);
-  right: -50px;
+  right: 0px;
   top: 10px;
 }
 .slider__list {
@@ -83,12 +89,21 @@
 .slider__item {
   width: 100%;
   padding: 54px 118px;
+  @include large {
+    padding: 30px 40px;
+  }
+  @include smoll {
+    padding: 15x 20px;
+  }
 }
 
 .slider__title {
   color: #fff;
   display: block;
   text-align: center;
+  @include smoll {
+    font-size: 28px;
+  }
 }
 
 .slider__title::before {
@@ -100,6 +115,13 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 70px;
+  @include extra-medium {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  @include extra-smoll {
+    align-items: flex-start;
+  }
 }
 
 .slider__image-container {
@@ -114,10 +136,16 @@
   height: 141px;
   object-fit: contain;
   object-position: center;
+  @include extra-smoll {
+    display: none;
+  }
 }
 
 .slider__image-description {
   margin-left: 33px;
+  @include extra-smoll {
+    margin-left: 0;
+  }
 }
 
 .slider__content-name {
@@ -131,6 +159,9 @@
   color: rgba(255, 255, 255, 0.85);
   font-size: 18px;
   line-height: 1;
+  @include extra-smoll {
+    display: none;
+  }
 }
 
 .slider__blockquote {
@@ -139,4 +170,12 @@
   color: rgba(255, 255, 255, 0.9);
   font-size: 19px;
   line-height: 1.57;
+  @include extra-medium {
+    width: 100%;
+    margin-top: 20px;
+  }
+  @include extra-smoll {
+    order: -1;
+    margin-top: 0;
+  }
 }

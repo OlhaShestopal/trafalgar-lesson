@@ -13,9 +13,10 @@
 .fon-img::after {
   content: "";
   display: block;
-  width: 938px;
-  height: 671px;
+  max-width: 938px;
+  max-height: 671px;
   background: url(../img/Frame.png) left center no-repeat;
+  background-size: cover;
   position: absolute;
   top: 170px;
   left: 0;

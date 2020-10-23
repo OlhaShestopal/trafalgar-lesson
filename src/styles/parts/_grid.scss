@@ -1,7 +1,7 @@
 .container {
   max-width: 1120px;
   margin: 0 auto;
-  @media screen and (max-width: 1150px) {
+  @include large {
     padding: 0 15px;
   }
 }
@@ -11,11 +11,14 @@
   flex-wrap: wrap;
 }
 
-.col {
-  flex-grow: 1;
-}
-
 .col-50 {
   width: 50%;
   max-width: 50%;
+}
+
+.col-m-100 {
+  @include medium {
+    width: 100%;
+    max-width: 100%;
+  }
 }

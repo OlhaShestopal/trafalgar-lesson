@@ -3,11 +3,18 @@
   position: relative;
   padding: 118px 0 113px 0;
   background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+  @include medium {
+    margin-top: 60px;
+    padding: 30px 0;
+  }
 }
 
 .footer__container {
   display: flex;
   justify-content: space-between;
+  @include medium {
+    flex-direction: column;
+  }
 }
 
 .footer__column--small {
@@ -16,6 +23,12 @@
 
 .footer__column--large {
   width: 390px;
+  @include medium {
+    order: 5;
+  }
+  @include extra-smoll {
+    width: 100%;
+  }
 }
 
 .footer__column--flex-column {

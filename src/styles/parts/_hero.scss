@@ -28,6 +28,11 @@
   flex-direction: column;
 
   padding-right: 110px;
+
+  @include medium {
+    align-items: center;
+    padding-right: 0;
+  }
 }
 
 .hero__title {
@@ -35,4 +40,13 @@
   font-weight: 700;
   color: #000;
   line-height: 1.16;
+  @include medium {
+    font-size: 36px;
+  }
+}
+
+.hero__column--illustration {
+  @include medium {
+    display: none;
+  }
 }
